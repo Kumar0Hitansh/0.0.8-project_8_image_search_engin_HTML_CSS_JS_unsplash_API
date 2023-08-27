@@ -1,0 +1,129 @@
+@font-face {  font-family: "Glamour_Bouquet";  src: url(fonts/Glamour_Bouquet.otf);}
+* {  margin: 0 auto;  padding: 0;  box-sizing: border-box;}
+body {  font-family: system-ui;  background: radial-gradient(circle, transparent 25%, #ffffff 26%),
+    linear-gradient(
+      45deg,
+      transparent 46%,
+      #4f46e4 47%,
+      #4f46e4 52%,
+      transparent 53%
+    ),
+    linear-gradient(
+      135deg,
+      transparent 46%,
+      #4f46e4 47%,
+      #4f46e4 52%,
+      transparent 53%
+    );
+  background-size: 1em 1em;  background-color: #ffffff;  color: black;  height: auto;  scroll-behavior: smooth;
+}
+.headingspan {
+  text-transform: uppercase;  margin: 100px auto 50px;  font-weight: bolder;  display: flex;  flex-direction: column;
+  flex-wrap: wrap;  justify-content: center;  align-content: center;  align-items: center;
+}
+h1 {
+  font-size: 80px;  display: inline;
+}
+h4 {
+  font-size: 30px;  display: inline;  font-family: "Glamour_Bouquet";
+  text-transform: capitalize;  color: #ea1179;
+}
+form {
+  width: calc(100vw - 10%);  margin: auto;  height: 80px;
+  background: #000;  display: flex;  align-items: center;  border-radius: 10px;
+}
+form > input {
+  width: 100%;  height: 100%;  border: 0;  outline: 0;  background: transparent;
+  color: white;  font-size: 18px;  padding: 0 30px;  border-radius: 10px 0px 0px 10px;
+}
+form > button {
+  width: 40%;  height: 100%;  background: #ff2717;  color: white;
+  font-size: 18px;  border: 0;  outline: 0;  font-weight: bolder;  border-radius: 0px 10px 10px 0px;  cursor: pointer;
+}
+form > button:hover {
+  background: #ff3929;
+}
+::placeholder {
+  color: #fff;  font-size: 18px;  font-family: system-ui;  font-weight: bolder;
+}
+.more {
+  width: 100%;  display: flex;  margin: 40px 0px;
+}
+#showmorebtn {
+  padding: 10px 20px;  background: #ff2717;  color: white;  font-size: 18px;
+  border: 0;  outline: 0;  font-weight: bolder;  border-radius: 8px 8px 8px 8px;
+  cursor: pointer;  margin: auto;  height: 80px;  display: none;
+}
+#showmorebtn:hover {
+  background: #ff3929;
+}
+#searchresult {
+  width: 90%;  margin-top: 100px;  padding: 0px 40px;  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;  grid-gap: 60px;  align-items: center;  justify-content: center;  align-content: space-between;
+}
+#searchresult img {
+  object-fit: cover;  width: 100%;  height: 400px;  border-radius: 2px;
+}
+.uparraow {
+  background: #ff2717;  border-radius: 50%;  height: 60px;  width: 60px;  position: fixed;
+  bottom: 20px;  right: 20px;  display: none;
+}
+.uparraow:hover {
+  background: #ff3929;
+}
+.uparraow > a {
+  display: flex;  flex-direction: column;  justify-content: center;  align-items: center;
+}
+
+@media (max-width: 769px) {
+  #searchresult {
+    width: 100%;
+    margin-top: 100px;
+    padding: 0px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 60px;
+    align-items: center;
+    justify-content: center;
+    align-content: space-between;
+  }
+  #searchresult img {
+    object-fit: cover;    width: 100%;    height: 400px;    border-radius: 2px;
+  }
+  .headingspan > h1 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 426px) {
+  .headingspan > h1 {
+    font-size: 28px;
+  }
+  #searchresult {
+    width: 100%;    margin-top: 100px;    padding: 0px 20px;    display: grid;    grid-template-columns: 1fr;    grid-gap: 60px;
+    align-items: center;    justify-content: center;    align-content: space-between;
+  }
+  #searchresult img {
+    object-fit: cover;    width: 100%;    height: 400px;    border-radius: 2px;
+  }
+}
+footer {
+  background-color: #000000b5;  color: white;  display: flex;  justify-content: space-between;  align-items: center;
+  align-content: center;  flex-direction: row;  flex-wrap: wrap;  text-transform: uppercase;  text-align: justify;
+  padding: 50px 0px;  gap: 40px;  margin-top: 260px;
+}
+footer > .f {
+  width: 200px;
+}
+footer > .f > h5 {
+  margin-bottom: 20px;
+}
+footer > .f > ul {
+  list-style-type: none;  margin-left: 10px;
+}
+#f1 {
+  font-size: 50px;  font-weight: bolder;
+}
+#f3 {
+  text-align: start;
+}
